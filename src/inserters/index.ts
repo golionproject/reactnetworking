@@ -1,1 +1,1 @@
-export default usePutBalanceSalespeople;
+export { default as usePutBalanceSalespeople } from "./usePutBalanceSalespeople";

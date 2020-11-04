@@ -1,3 +1,3 @@
 import Salespeople from "./Salespeople";
-
-export { Salespeople };
+import Salesman from "./Salesman";
+export { Salespeople, Salesman };

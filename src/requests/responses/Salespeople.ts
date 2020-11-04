@@ -1,5 +1,12 @@
+interface Salesman {
+  id: number;
+  email: string;
+  name: string;
+  createdAt: Date;
+}
+
 interface Salespeople {
-  results: Array<{ id: number; email: string; name: string; createdAt: Date }>;
+  results: Array<Salesman>;
   total: number;
 }
 
