@@ -13,7 +13,13 @@ function useSalespeople(
   // @ts-ignore
   searchTerm: "string" | undefined
 ): Salespeople | Error | null {
-  const [result, error] = useRequest(getSalespeople);
+  const [result, error] = useRequest(
+    getSalespeople,
+    pageNumber,
+    pageSize,
+    orderBy,
+    searchTerm
+  );
   if (result) return result;
   if (error) return error;
   return null;

@@ -20,7 +20,11 @@ const results = [
 ];
 
 // @ts-ignore
-async function getStatementBySalesman(id: number): Promise<Statements> {
+async function getStatementBySalesman(
+  id: number,
+  pageNumber: number,
+  pageSize: number
+): Promise<Statements> {
   return Promise.resolve({
     results,
     total: 2
