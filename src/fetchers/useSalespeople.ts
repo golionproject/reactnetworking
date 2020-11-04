@@ -12,8 +12,11 @@ function useSalespeople(
   orderBy: "email" | "name" | "createdAt",
   // @ts-ignore
   searchTerm: "string" | undefined
-): Salespeople | Error {
-  return useRequest(getSalespeople);
+): Salespeople | Error | null {
+  const [result, error] = useRequest(getSalespeople);
+  if (result) return result;
+  if (error) return error;
+  return null;
 }
 
 export default useSalespeople;
