@@ -19,10 +19,12 @@ const results = [
   }
 ];
 
-// @ts-ignore
 async function getStatementBySalesman(
+  // @ts-ignore
   id: number,
+  // @ts-ignore
   pageNumber: number,
+  // @ts-ignore
   pageSize: number
 ): Promise<Statements> {
   return Promise.resolve({
